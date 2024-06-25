@@ -1,0 +1,11 @@
+{
+  "name": "nestjs-ssm-config-module",
+  "version": "1.0.0",
+  "description": "SSM Config Module for Nest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "André Vargas",
+  "license": "MIT"
+}
