@@ -4,20 +4,20 @@ import { DynamicModule, HttpStatus, Module } from '@nestjs/common';
 import { FactoryProvider } from '@nestjs/common/interfaces';
 import { ConfigFactory, ConfigFactoryKeyHost, ConfigService } from '@nestjs/config';
 import { ValidationError, ValidatorOptions, validate } from 'class-validator';
-import { mergeConfigObject } from './utils/merge-configs.util';
-import { ConfigHostModule } from './config-host.module';
-import { createConfigProvider } from './utils/create-config-factory.util';
-import { getRegistrationToken } from './utils/get-registration-token.util';
-import { ICustomConfigModuleOptions } from './interface/config.module.interface';
-import { AwsService } from '../../services/aws.service';
 import { ClassConstructor, plainToClass } from 'class-transformer';
-import { HttpText } from './enums/http.enum';
-import { getSSMColumn } from '../../decorators/ssm.decorator';
+import { ConfigHostModule } from './config-host.module';
 import {
   CUSTOM_CONFIGURATION_LOADER,
   CUSTOM_CONFIGURATION_TOKEN,
   CUSTOM_CONFIG_SERVICE
 } from './constants/custom-config.module.constant';
+import { HttpText } from './enums/http.enum';
+import { getSSMColumn } from 'packages/common/decorators/ssm.decorator';
+import { AwsService } from 'packages/common/services/aws.service';
+import { ICustomConfigModuleOptions } from './interface/config.module.interface';
+import { createConfigProvider } from './utils/create-config-factory.util';
+import { getRegistrationToken } from './utils/get-registration-token.util';
+import { mergeConfigObject } from './utils/merge-configs.util';
 
 /**
  * @publicApi
