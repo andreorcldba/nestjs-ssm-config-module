@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf -rf dist && tsc -p tsconfig.json",
-    "publish": "npm publish --tag next",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage"
