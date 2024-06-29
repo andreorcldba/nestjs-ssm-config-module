@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ssm-config-module",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "SSM Config Module for Nest.",
   "main": "index.js",
   "scripts": {
