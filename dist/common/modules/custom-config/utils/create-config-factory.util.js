@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createConfigProvider = createConfigProvider;
+exports.createConfigProvider = void 0;
 const uuid_1 = require("uuid");
 const config_1 = require("@nestjs/config");
 function createConfigProvider(factory) {
@@ -10,3 +10,4 @@ function createConfigProvider(factory) {
         inject: []
     };
 }
+exports.createConfigProvider = createConfigProvider;

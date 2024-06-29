@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.mergeConfigObject = mergeConfigObject;
+exports.mergeConfigObject = void 0;
 const lodash_1 = require("lodash");
 function mergeConfigObject(host, partial, token) {
     if (token) {
@@ -9,3 +9,4 @@ function mergeConfigObject(host, partial, token) {
     }
     Object.assign(host, partial);
 }
+exports.mergeConfigObject = mergeConfigObject;
