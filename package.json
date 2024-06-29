@@ -1,9 +1,11 @@
 {
   "name": "nestjs-ssm-config-module",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "SSM Config Module for Nest.",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf -rf dist && tsc -p tsconfig.json",
+    "publish": "npm publish --tag next",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage"
